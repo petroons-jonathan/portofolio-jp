@@ -1,9 +1,9 @@
 
 <?php
 $servername = "localhost";
-$username = "user";
-$password = "user";
-$dbname = "process";
+$username = "id12378042_jonathan";
+$password = "rftgyhuj";
+$dbname = "id12378042_process";
 
 
 $errorMSG = "";
@@ -78,7 +78,7 @@ else if ($email == ""){
 else if ($message == ""){
     echo "<p>Le message est requis<p>";}
 else{
-    $sql = "INSERT INTO process (date_post, gender, name, country, email, subject, message)
+    $sql = "INSERT INTO process (name, email,message)
     VALUES ('$name', '$email','$message')";
     mysqli_close($conn);
 }
